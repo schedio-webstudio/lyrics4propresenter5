@@ -300,6 +300,30 @@ function unicodeToBamini(text) {
   text = text.replace(/ஓ/g, "X");
   text = text.replace(/ஔ/g, "xs");
   text = text.replace(/ஃ/g, "/");
+  text = text.replace(/–/g, "-");
+  text = text.replace(/0/g, "0");
+  text = text.replace(/1/g, "1");
+  text = text.replace(/2/g, "2");
+  text = text.replace(/3/g, "3");
+  text = text.replace(/4/g, "4");
+  text = text.replace(/5/g, "5");
+  text = text.replace(/6/g, "6");
+  text = text.replace(/7/g, "7");
+  text = text.replace(/8/g, "8");
+  text = text.replace(/9/g, "9");
+
+  text = text.replace(/!/g, "!");
+  text = text.replace(/@/g, "@");
+  text = text.replace(/#/g, "#");
+  text = text.replace(/\$/g, "$");
+  text = text.replace(/%/g, "%");
+  text = text.replace(/\^/g, "^");
+  text = text.replace(/&/g, "&");
+  text = text.replace(/\*/g, "*");
+  text = text.replace(/\(/g, "(");
+  text = text.replace(/\)/g, ")");
+
+
   return text;
 }
 
